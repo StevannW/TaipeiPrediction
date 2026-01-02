@@ -408,8 +408,19 @@ const ControlPanel: React.FC<ControlPanelProps> = ({ viewMode, startLocation, en
         <div className="section">
           <h3>🕐 Departure Time</h3>
           <div className="time-input">
-            <input type="datetime-local" value={departureTime} onChange={(e) => onDepartureTimeChange(e.target.value)} min="2017-09-18T00:00" max="2017-11-30T23:59" title="Select departure date and time" />
-            <p className="time-note">Historical data: Sept 18 - Nov 30, 2017</p>
+            <input 
+              type="time" 
+              value={departureTime} 
+              onChange={(e) => onDepartureTimeChange(e.target.value)} 
+              onClick={(e) => {
+                const target = e.target as HTMLInputElement;
+                if (target.showPicker) {
+                  target.showPicker();
+                }
+              }}
+              title="Select departure time" 
+            />
+            <p className="time-note">Date fixed: September 19, 2017</p>
           </div>
         </div>
 

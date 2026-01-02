@@ -11,7 +11,7 @@ function App() {
   const [viewMode, setViewMode] = useState<ViewMode>('3d');
   const [startLocation, setStartLocation] = useState<Location | null>(null);
   const [endLocation, setEndLocation] = useState<Location | null>(null);
-  const [departureTime, setDepartureTime] = useState<string>('2017-09-19T08:30');
+  const [departureTime, setDepartureTime] = useState<string>('08:30');
   const [selectedModel, setSelectedModel] = useState<string>('xgboost');
   const [showDetectors, setShowDetectors] = useState<boolean>(false);
   const [routeData, setRouteData] = useState<RouteData | null>(null);
@@ -53,7 +53,7 @@ function App() {
           start_lng: startLocation.lng,
           end_lat: endLocation.lat,
           end_lng: endLocation.lng,
-          departure_time: departureTime,
+          departure_time: `2017-09-19T${departureTime}`,
         }),
       });
 

@@ -304,9 +304,19 @@
   box-shadow: 0 0 0 2px rgba(212, 197, 160, 0.1);
 }
 
+.time-input {
+  position: relative;
+}
+
+.time-input input {
+  cursor: pointer;
+}
+
 .time-input input::-webkit-calendar-picker-indicator {
   filter: invert(0.7) sepia(1) saturate(0.5) hue-rotate(15deg);
   cursor: pointer;
+  padding: 8px;
+  margin-left: 8px;
 }
 
 .time-note {
