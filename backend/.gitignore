@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+venv/
+.env
+cleaned_traffic_data_Taipeh.csv
+*.log

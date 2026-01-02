@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data files (large datasets)
+*.csv
+*.pth
+*.pkl
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Frontend specific
+.vite/
+.cache/
+coverage/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
