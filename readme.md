@@ -1,10 +1,4 @@
-
-
----
-
-# **Software Requirements Specification (SRS)**
-
-## **Project: TaipehSim – A Historical Simulation Router**
+# **Project: TaipehSim – A Historical Simulation Router**
 ---
 
 ## **1. Introduction**
